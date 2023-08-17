@@ -3,6 +3,35 @@
     padding: 0;
     font-family: Calibri;
     box-sizing: border-box;
+
+}
+
+body {
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.textBody{
+    padding: 0 0 0 80px;
+    background-color:#3f7baf;
+    width:100%;
+    color:aliceblue;
+}
+
+
+.transparent-button:hover {
+    color: sandybrown;
+}
+
+content {
+    min-height: 100vh; /* 100% of the viewport height */
+    overflow: auto;
 }
 
 .header {
@@ -11,6 +40,7 @@
     background-image: linear-gradient(rgba(240,248,255, 0.55), rgba(38, 74, 106, 0.55)), url(Background.jpg);
     background-size: cover;
     background-position: center;
+    z-index: 999;
 }
 
 .navBar{
@@ -56,22 +86,24 @@
     width:100%;
 }
 
-.items{
+.items {
     width: 100%;
     position: absolute;
-    top:50%;
-    transform:translateY(-50%);
-    text-align: center;
-    color:aliceblue;
+    top: 42.5%;
+    transform: translateY(-50%);
+    margin: auto 70px;
+    color: aliceblue;
 }
 
-.items h1{
-    font-size:80px;
+.items h2{
+    font-size:30px;
+    text-align:left;
 }
 
 .item p{
     margin: 20px auto;
     margin-top: 80px;
+    font-weight:500;
 }
 
 .item p{
@@ -80,9 +112,51 @@
     line-height: 25px;
 }
 
+@keyframes items {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Apply the animation to your element */
+.items {
+    animation: fadeInLeft 1s ease-in-out forwards;
+}
+
+.item btn {
+    background-color: transparent;
+    border: none;
+    color: aliceblue;
+    text-decoration: underline;
+    text-decoration-color: aliceblue;
+    cursor: pointer; /* Optional: Add a cursor style for better user experience */
+}
+
+.Para{
+    opacity:1;
+}
+
+.gallery h2 {
+    font-size: 22px;
+    padding: 20px 0;
+}
+.gallery p{
+    text-decoration:none;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 20px 0;
+}
+
 .footer{
     background-color:#3a74a6;
     padding: 70px 0;
+    z-index:1;
 }
 
 .holder{
