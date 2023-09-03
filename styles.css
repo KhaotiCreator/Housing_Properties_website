@@ -95,6 +95,17 @@ content {
     color: aliceblue;
 }
 
+.transparent-button {
+    background-color: transparent;
+    border: none;
+    color: aliceblue;
+    text-decoration: underline;
+    text-decoration-color: aliceblue;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all ease-in 0.2s;
+}
+
 .items h2{
     font-size:30px;
     text-align:left;
