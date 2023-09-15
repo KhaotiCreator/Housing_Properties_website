@@ -24,6 +24,14 @@ body {
     color:aliceblue;
 }
 
+.textBody .textPos .gallery img {
+    max-width: 100%;
+    margin-left: 900px;
+    position: relative;
+    top: -265px;
+}
+
+
 
 .transparent-button:hover {
     color: sandybrown;
@@ -134,6 +142,23 @@ content {
         transform: translateX(0);
     }
 }
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.a_container .slide-in {
+    animation: slideIn 1s ease-in-out forwards;
+}
+
 
 /* Apply the animation to your element */
 .items {
